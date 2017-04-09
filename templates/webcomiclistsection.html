@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'css/comiclist.css' %}">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>{{ title }}</title>
+<style>
+img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+</div>
+<div id="middleContainer" class="box">
+
+<h1><a href="{% url 'webcomiclist' %}" class="btn btn-primary btn-block" role="button">Back to Webcomic List</a></h1><br>
+({{ comicTitle }})<br><br>
+<a href={{ homepage }} class="btn btn-primary btn-block" role="button">(Home page of {{ title }})</a><br><br>
+
+  <div id="comic">
+	<img src='{{ comicURL }}'>
+</div>
+<a href="{% url 'webcomiclist' %}" class="btn btn-primary btn-block" role="button">Back to Webcomic List</a><br><br>
+</div>
+
+

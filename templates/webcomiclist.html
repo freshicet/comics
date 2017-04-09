@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'css/comiclist.css' %}">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<div id="middleContainer" class="box">
+	<title>Webcomics list</title>
+<h1><a href="{% url 'home' %}" class="btn btn-primary btn-block" role="button">Home</a></h1><br>
+(Hover over the comic to see last update!)<br><br>
+  
+  <ul>
+    <br><a href="/webcomiclistsection/?q=Flaky_pastry" title={{ updateforFP }}>Flaky Pastry</a></li>
+    <br><a href="/webcomiclistsection/?q=the_awkward_yeti" title={{ updateforTAY }}>The Awkward Yeti</a></li>
+    <br><a href="/webcomiclistsection/?q=girl_genius"title={{ updateforGG }}>Girl Genius</a></li>
+    <br><a href="/webcomiclistsection/?q=lack_a_daisy"title={{ updateforLAD }}>Lackadaisy</a></li>
+    <br><a href="/webcomiclistsection/?q=mega_tokyo"title={{ updateforMT }}>Mega Tokyo</a></li>
+	<br><a href="/webcomiclistsection/?q=quantum_vibe"title={{ updateforQV }}>Quantum Vibe</a></li>
+	<br><a href="/webcomiclistsection/?q=sandra_and_woo"title={{ updateforSAW }}>Sandra and Woo</a></li>
+	<!-- <br><a href="/webcomiclistsection/?q=oots"title={{ updateforGG }}>Order of the Stick</a></li> -->
+	<br><a href="/webcomiclistsection/?q=xkcd"title={{ updateforxkcd }}>xkcd</a></li>
+	<!-- <br><a href="/webcomiclistsection/?q=three_word_phrase">Three Word Phrase</a></li> -->
+	<br><a href="/webcomiclistsection/?q=Dinosaur_Comics"title={{ updateforD_C }}>Dinosaur Comics</a></li>
+	<br><a href="/webcomiclistsection/?q=butter_safe"title={{ updateforBS }}>Buttersafe</a></li>
+	<br><a href="/webcomiclistsection/?q=the_perry_bible_fellowship"title={{ updateforpbf }}>The Perry Bible Fellowship</a></li>
+	<br><a href="/webcomiclistsection/?q=cardboard_crack"title={{ updateforCC }}>Cardboard Crack</a></li>
+	<br><a href="/webcomiclistsection/?q=Wonder_mark"title={{ updateforWM }}>Wondermark</a></li>
+	<br><a href="/webcomiclistsection/?q=The_Abominable"title={{ updateforTA }}>Abominable</a></li>
+	<br><a href="/webcomiclistsection/?q=Saturday_Morning_Breakfast_Cereal"title={{ updateforSMBC }}>Saturday Morning Breakfast Cereal</a></li>
+	<br><a href="/webcomiclistsection/?q=Axe_Cop"title={{ updateforAC }}>Axe Cop</a></li>
+	</ul>
+</div>
