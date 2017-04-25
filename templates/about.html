@@ -4,6 +4,7 @@
 <head>
    <title>About</title>
   <meta charset="utf-8">
+  <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -49,6 +50,24 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
   </style>
 </head>
 <body>
@@ -84,9 +103,8 @@
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin"><a name="WHatamI"></a>What Am I?</h3>
-  <p>I spend my days with my hands in few different areas of web development from back end programming Django/Python to front end engineering (HTML, CSS, and jQuery/Javascript), user experience and visual design.
-I’m extremely passionate about web development and design in all it’s forms. Aside from web development, I enjoy spending my time 
-with my girlfriend, playing computer games, and taking photos.</p>
+  <p>I spend my days with my hands in few different areas of web development from back end programming with Django/Python to front end engineering (HTML, CSS, and jQuery/Javascript),  user experience, and visual design.
+I’m extremely passionate about web development and design in all forms. Aside from web development, I enjoy spending my time with my girlfriend, playing computer games, and taking photos.</p>
   
 </div>
 
@@ -103,7 +121,7 @@ with my girlfriend, playing computer games, and taking photos.</p>
     </div>
     <div class="col-sm-4"> 
       <p><a href="mailto:btaylor280@gmail.com" >Email</span></a></p>
-      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
   </div>
 </div>
