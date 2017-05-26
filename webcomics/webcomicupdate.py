@@ -61,10 +61,11 @@ updateforBStime = datetime.strptime(s, '%a, %d %b %Y %H:%M:%S')
 updateforBS = updateforBStime.strftime('%m/%d/%Y')
 
 
-d = feedparser.parse('http://pbfcomics.com/feed/feed.xml')
-d = d.entries[0].updated
-datetime = parse_datetime(d)
-updateforpbf = datetime.strftime('%m/%d/%Y')
+d = feedparser.parse('http://pbfcomics.com/feed/')
+s = d.entries[0].published
+s = s[0:24]
+updateforpbftime = datetime.strptime(s, '%a, %d %b %Y %H:%M:%S')
+updateforpbf = updateforD_Ctime.strftime('%m/%d/%Y')
 
 
 d = feedparser.parse('http://cardboard-crack.com/rss')
