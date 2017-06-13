@@ -4,11 +4,11 @@
 <table>
 <tr>
 <td>
-  A webapp using Django to display webcomics.[Website](http://freshicet.webfactional.com/)
+  A webapp using Django to display webcomics.
 </td>
 </tr>
 </table>
-[Website](http://freshicet.webfactional.com/)
+* The website can be find [here](http://harryhoudini.club/)
 
 
 ## Site
