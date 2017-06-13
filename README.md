@@ -4,7 +4,7 @@
 <table>
 <tr>
 <td>
-  A webapp using Django to display webcomics.
+  A webapp using Django to display webcomics.[Website](http://freshicet.webfactional.com/)
 </td>
 </tr>
 </table>
